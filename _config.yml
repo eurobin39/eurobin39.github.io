@@ -1,55 +1,50 @@
 # Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
+# 이 파일은 블로그 전체에 영향을 주는 설정을 담고 있어요.
+# 자주 수정할 필요는 없고, 자주 바뀌는 데이터는 Jekyll 데이터 파일을 활용하세요.
+
+# 서버 실행 중 수정 시 재시작 필요
+# 'bundle exec jekyll serve'를 사용할 때 이 파일은 자동으로 새로고침되지 않아요.
+
+# YAML 문법 참고:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+# 사이트 설정
+title: EURO-ZONE
+email: eurobae@example.com  # 당신의 이메일로 변경하세요
+description: >- 
+  EURO-ZONE에서 프로젝트, 공부, 코딩 기록을 공유합니다. 알고리즘, 이산수학, 컴공 기초부터 코딩 테스트까지!
+baseurl: ""  # GitHub Pages 루트로 사용할 거면 빈칸 유지
+url: "https://eurobin39.github.io"  # GitHub Pages URL
+github_username: eurobin39  # 당신의 GitHub 사용자 이름
+twitter_username:  # 트위터 계정이 있다면 추가
 
-# Build settings
-theme: minima
+# 카테고리 설정
+categories:
+  - projects
+  - study
+  - coding
+
+# 상단 메뉴 설정
+header_pages:
+  - projects.md
+  - study.md
+  - coding.md
+
+# 빌드 설정
+theme: minima  # 기본 테마 유지, 원하면 다른 테마로 변경 가능
 plugins:
-  - jekyll-feed
+  - jekyll-feed  # 피드 생성 플러그인
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# 제외 항목
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
